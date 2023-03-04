@@ -6,17 +6,21 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  /*border: 2px solid red; */ 
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  /*border: 2px solid red; */
 }
 
-
-
-h1, h2, h3, div, img, p, a, section{
-  /*border: 1px solid red; */  
+h1,
+h2,
+h3,
+div,
+img,
+p,
+a,
+section {
+  /*border: 1px solid red; */
   margin: 0;
-} 
-
+}
 
 .header {
   display: flex;
@@ -24,10 +28,9 @@ h1, h2, h3, div, img, p, a, section{
   max-height: 756px;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  min-height: 600px;
   position: relative;
   background-color: #f2f2f2;
-  
 
   /* выше установили ограничения для секции */
 }
@@ -35,8 +38,8 @@ h1, h2, h3, div, img, p, a, section{
 .logo {
   width: 228px;
   height: 32px;
-  background-position:center;
-  background-size:contain;
+  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -45,7 +48,7 @@ h1, h2, h3, div, img, p, a, section{
   top: 30px;
   background-image: url(../images/logo_place_header.svg);
   left: 64px;
-  }
+}
 
 .header__title {
   line-height: 96px;
@@ -56,16 +59,15 @@ h1, h2, h3, div, img, p, a, section{
   display: inline-block;
   margin-top: auto;
   margin-bottom: auto;
-  
 }
 
 .header__subtitle {
- position: absolute;
- width: 388px;
- bottom: 30px;
- line-height: normal;
- font-size: 18px;
- left: 64px;
+  position: absolute;
+  width: 388px;
+  bottom: 30px;
+  line-height: normal;
+  font-size: 18px;
+  left: 64px;
 }
 
 .link {
@@ -90,8 +92,6 @@ h1, h2, h3, div, img, p, a, section{
   background-color: #2f80ed;
   right: 0;
   top: 64px;
-
- 
 }
 
 .description {
@@ -104,14 +104,14 @@ h1, h2, h3, div, img, p, a, section{
 }
 
 .two-columns {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top:0;
-  width:80%;
+  margin-top: 0;
+  width: 80%;
   position: relative;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .two-columns__brief {
@@ -138,7 +138,6 @@ h1, h2, h3, div, img, p, a, section{
   font-weight: normal;
   margin-bottom: 30px;
 }
-
 
 .two-columns__span-accent {
   line-height: 34px;
@@ -179,13 +178,11 @@ h1, h2, h3, div, img, p, a, section{
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
-
 }
 
 .table__cell {
   width: 250px;
   margin-top: 60px;
-
 }
 
 .table__heading {
@@ -209,8 +206,6 @@ h1, h2, h3, div, img, p, a, section{
   position: relative;
   background-color: #f2f2f2;
   height: 890px;
-
-  
 }
 
 .feynman__title {
@@ -255,7 +250,6 @@ h1, h2, h3, div, img, p, a, section{
   position: relative;
   overflow: hidden;
   color: #ffffff;
-
 }
 
 .table__cell_theme_dark {
@@ -287,17 +281,14 @@ h1, h2, h3, div, img, p, a, section{
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
-  
 }
 
-.section-subtitle_theme_dark{
+.section-subtitle_theme_dark {
   margin-top: 20px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
-
-
 
 .table__heading_theme_dark {
   line-height: 1.15;
@@ -314,7 +305,6 @@ h1, h2, h3, div, img, p, a, section{
   margin-left: auto;
   margin-right: auto;
   color: #ffffff;
-  
 }
 
 .footer__columns {
@@ -325,7 +315,6 @@ h1, h2, h3, div, img, p, a, section{
   /*border: 2px solid red; */
   min-height: 350px;
   justify-content: space-between;
-  
 }
 
 .logo_place_footer {
@@ -341,7 +330,6 @@ h1, h2, h3, div, img, p, a, section{
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-
 }
 
 .footer__column_content_copyright {
@@ -349,7 +337,6 @@ h1, h2, h3, div, img, p, a, section{
   flex-direction: column;
   justify-content: space-between;
   width: 50%;
-  
 }
 
 .footer__column-heading {
@@ -363,14 +350,13 @@ h1, h2, h3, div, img, p, a, section{
   margin-bottom: 16px;
   padding-left: 0;
   list-style-type: none;
-  
 }
 
 .footer__column-link {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  
+
   color: white;
   text-decoration: none;
 }
