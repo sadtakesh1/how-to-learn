@@ -10,18 +10,6 @@
   /*border: 2px solid red; */
 }
 
-h1,
-h2,
-h3,
-div,
-img,
-p,
-a,
-section {
-  /*border: 1px solid red; */
-  margin: 0;
-}
-
 .header {
   display: flex;
   height: 100vh;
@@ -54,24 +42,25 @@ section {
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
-  width: 730px;
+  max-width: 730px;
   padding-left: 64px;
-  display: inline-block;
   margin-top: auto;
   margin-bottom: auto;
 }
 
 .header__subtitle {
   position: absolute;
-  width: 388px;
+  max-width: 388px;
   bottom: 30px;
-  line-height: normal;
+  line-height: 25px;
   font-size: 18px;
   left: 64px;
+  font-weight: normal;
 }
 
-.link {
+.header__link {
   color: #2f80ed;
+  text-decoration: none;
 }
 
 .header__main-illustration {
@@ -81,7 +70,6 @@ section {
   bottom: 0;
   right: 0;
   z-index: 1;
-  max-width: 50%;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -108,7 +96,7 @@ section {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 0;
-  width: 80%;
+  max-width: 80%;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -128,7 +116,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 80%;
+  max-width: 80%;
   min-width: 784px;
 }
 
@@ -136,7 +124,15 @@ section {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  margin: 0;
+}
+
+.two-columns__paragraph:first-of-type{
   margin-bottom: 30px;
+}
+
+.two-columns__paragraph:last-of-type{
+  margin-top: 30px;
 }
 
 .two-columns__span-accent {
@@ -151,7 +147,7 @@ section {
 }
 
 .section-title {
-  width: 60%;
+  max-width: 60%;
   margin-bottom: 20px;
   text-align: center;
   margin-left: auto;
@@ -162,7 +158,7 @@ section {
 }
 
 .section-subtitle {
-  width: 60%;
+  max-width: 60%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -199,25 +195,23 @@ section {
 }
 
 .feynman {
-  background-image: url(../images/feynman.png);
-  background-repeat: no-repeat;
+  background: no-repeat left bottom url('../images/feynman.png'), #f2f2f2;
   background-size: 867px 637px;
-  background-position: left bottom;
   position: relative;
-  background-color: #f2f2f2;
-  height: 890px;
+  min-height: 890px;
 }
 
 .feynman__title {
   text-align: center;
   padding-top: 100px;
-  width: 648px;
+  max-width: 648px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
   z-index: 1;
+  margin-bottom: 0;
 }
 
 .feynman__subtitle {
@@ -263,13 +257,14 @@ section {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+  margin-bottom: 0;
 }
 
 .kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
-  background-position: right top;
+  
   background-repeat: no-repeat;
-  background-size: 877px 877px;
+  background-size: cover;
   width: 877px;
   height: 877px;
   position: absolute;
@@ -281,19 +276,25 @@ section {
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
+  width: 60%;
+  
+  margin-top: 0;
 }
 
 .section-subtitle_theme_dark {
-  margin-top: 20px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  width: 60%; 
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .table__heading_theme_dark {
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
+  margin: 0;
 }
 
 .footer {
@@ -305,6 +306,7 @@ section {
   margin-left: auto;
   margin-right: auto;
   color: #ffffff;
+  box-sizing: border-box;
 }
 
 .footer__columns {
@@ -313,13 +315,11 @@ section {
   margin-left: auto;
   margin-right: auto;
   /*border: 2px solid red; */
-  min-height: 350px;
+  min-height: 250px;
   justify-content: space-between;
 }
 
 .logo_place_footer {
-  display: flex;
-  top: 0;
   left: 0;
   background-image: url(../images/logo_place_footer.svg);
 }
@@ -336,7 +336,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 50%;
+  flex-basis: 50%;
 }
 
 .footer__column-heading {
