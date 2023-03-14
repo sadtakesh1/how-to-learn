@@ -46,6 +46,8 @@
   padding-left: 64px;
   margin-top: auto;
   margin-bottom: auto;
+  position: relative;
+  z-index: 3;
 }
 
 .header__subtitle {
@@ -69,7 +71,7 @@
   height: 608px;
   bottom: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -80,6 +82,7 @@
   background-color: #2f80ed;
   right: 0;
   top: 64px;
+  z-index: 1;
 }
 
 .description {
