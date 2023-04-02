@@ -157,7 +157,6 @@
   margin: 100px auto 0 auto;
   max-width: 80%;
   position: relative;
-
 }
 
 .cards{
@@ -165,15 +164,16 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-between;
   flex-wrap: wrap;
-  
-
 }
 
 .cards__item{
   margin-right: 100px;
-  width: 160px;
+  width: 240px;
+}
+
+.cards__item:nth-child(3n){
+  margin-right: 0;
 }
 
 .cards__image{
@@ -200,9 +200,96 @@
   text-align: center;
 }
 
+.video{
+  margin-top: 100px;
+}
+
+.iframes__video{
+  display: flex;
+  justify-content: center;
+  margin: 50px auto -60px auto;
+  gap: 20px;
+}
+
+.iframe__video{
+  width: 515px;
+  height: 316px;
+}
+
 .digits {
   margin-top: 100px;
   margin-bottom: 100px;
+}
+
+.khan{
+  padding-top: 105px;
+  background-color: #f2f2f2;
+}
+
+.khan__container{
+  max-width: 80%;
+  margin: 0 auto 0 auto;
+}
+
+.khan__author{
+  margin: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+
+}
+
+.khan__title{
+  margin: 0 0 50px 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+
+}
+
+.khan__quote{
+  width: 790px;
+  margin: 0 0 36px 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__quote-author{
+  margin: 0 0 10px 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.khan__quote-author-subline{
+  margin: 0 0 68px 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+
+}
+
+.khan__book-container{
+  display: flex;
+}
+
+.khan__book-pic{
+  width: 620px;
+  height: 608px;
+  margin: 0;
+  object-fit: cover;
+  object-position: top;
+
+}
+
+.khan__buy-link{
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
+  margin: 0 0 0 48px;
 }
 
 .section-title {
@@ -251,6 +338,11 @@
   font-size: 18px;
   font-weight: normal;
   margin-bottom: 0;
+}
+
+.oakley{
+  padding-top: 160px;
+  background-color:  #f2f2f2;
 }
 
 .feynman {
@@ -344,6 +436,23 @@
   font-size: 24px;
   font-weight: 600;
   margin: 0;
+}
+
+.resources{
+  padding: 100px 0 217px 0;
+  display: relative;
+}
+
+.resources__logo-zone{
+  margin: 80px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  max-width: 1100px;
+}
+
+.resources__link{
+  width: 270px;
+  height: 38px;
 }
 
 .footer {
