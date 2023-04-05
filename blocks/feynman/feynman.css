@@ -34,5 +34,9 @@
     right: 48px;
     bottom: auto;
     text-decoration: none;
+    transition: opacity .3s;
   }
-  
+
+  .feynman__link:hover{
+    opacity: .5;
+  }
