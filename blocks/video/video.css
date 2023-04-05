@@ -1,7 +1,4 @@
-@import url("../section-title/section-title.css");
-@import url("../section-subtitle/section-subtitle.css");
-@import url("../../blocks/video/iframes__video/iframes__video.css");
-@import url("../../blocks/video/iframes__video/iframe__video.css");
+
 
 .video{
     margin-top: 100px;
